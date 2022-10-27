@@ -1,0 +1,6 @@
+<!--Documento 1: DTD EXTERNO-->
+<!ELEMENT nota (para*, de, titulo, contenido)>
+<!ELEMENT para (#PCDATA)>
+<!ELEMENT de (#PCDATA)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT contenido (#PCDATA)>

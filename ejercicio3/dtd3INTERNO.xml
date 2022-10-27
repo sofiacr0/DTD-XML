@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE EdicionesAranda [
+        <!ELEMENT EdicionesAranda (cabecera, ventas)>
+        <!ELEMENT cabecera (titulo, contenido, descripcion, fecha_del_informe)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT contenido (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT fecha_del_informe (#PCDATA)>
+        <!ELEMENT ventas (región+, trimestre, libros_vendidos)>
+        <!ELEMENT región (norte | centro | sur)>
+        <!ELEMENT norte (#PCDATA|trimestre|lib)*>
+        <!ELEMENT centro (#PCDATA|trimestre|lib)*>
+        <!ELEMENT sur (#PCDATA|trimestre|lib)*>
+        <!ELEMENT lib (#PCDATA)>
+        <!ELEMENT trimestre (#PCDATA)>
+        <!ELEMENT libros_vendidos (#PCDATA)>
+        ]>
+<EdicionesAranda>
+    <cabecera>
+        <titulo>Ediciones Aranda</titulo>
+        <contenido>Informe regional de ventas</contenido>
+        <descripcion>Descripcion: informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+        <fecha_del_informe>Fecha: 30/12/2009</fecha_del_informe>
+    </cabecera>
+    <ventas>
+        <región>
+            <norte>Norte
+                <trimestre>1</trimestre>
+                    <lib>24000</lib>
+                <trimestre>2</trimestre>
+                    <lib>38600</lib>
+                <trimestre>3</trimestre>
+                    <lib>NO_INFO</lib>
+                <trimestre>4</trimestre>
+                    <lib>NO_INFO</lib>
+            </norte>
+        </región>
+        <región>
+            <centro>Centro
+                <trimestre>1</trimestre>
+                <lib>NO_INFO</lib>
+                <trimestre>2</trimestre>
+                <lib>16080</lib>
+                <trimestre>3</trimestre>
+                <lib>25000</lib>
+                <trimestre>4</trimestre>
+                <lib>29000</lib>
+            </centro>
+        </región>
+        <región>
+            <sur>
+                <trimestre>1</trimestre>
+                <lib>27000</lib>
+                <trimestre>2</trimestre>
+                <lib>31400</lib>
+                <trimestre>3</trimestre>
+                <lib>40100</lib>
+                <trimestre>4</trimestre>
+                <lib>30000</lib>
+            </sur>
+        </región>
+        <trimestre>Trimestre</trimestre>
+        <libros_vendidos>Libros vendidos</libros_vendidos>
+    </ventas>
+</EdicionesAranda>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Documento 1: XML-->
+<!DOCTYPE nota SYSTEM "dtdEXTERNO.dtd">
+<nota>
+    <para>Pedro</para>
+    <de>Laura</de>
+    <titulo>Recordatorio</titulo>
+    <contenido>A las 7:00 en la puerta del teatro</contenido>
+</nota>
